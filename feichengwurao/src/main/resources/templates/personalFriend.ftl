@@ -10,10 +10,34 @@
 </div>
 
 <script>
+    $(function () {
+        initFriendList();
+    })
 
-    function search() {
-        $("#abc").load("/search.html",{"key":$("#sch").val(),"page":1});
+    function initFriendList() {
+        $.post("/initFriendList",function (result) {
+            if(result.status==200){
+                for(var aa of result.object){
+                    //var item="<a href=\"javascript:$('#show').load('/personalFriendData',{name:"+aa.name+"})\"></a>";
+                    $("#friendList").append(item);
+                }
+
+            }
+        })
     }
+    function search() {
+        $.post("/initFriendList",function (result) {
+            if(result.status==200){
+                $("#friendList").empty()
+                var item="<a href=\"javascript:$('#show').load('/personalFriendData',{name:"+(result.object.name)+"})\"></a>";
+                $("#friendList").append(item);
+            }
+        })
+
+        });
+    }
+
+
 
 </script>
 
