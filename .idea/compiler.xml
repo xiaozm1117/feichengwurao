@@ -15,9 +15,9 @@
     <bytecodeTargetLevel>
       <module name="common" target="1.8" />
       <module name="eureka" target="1.8" />
-      <module name="fcwr-part1" target="1.6" />
-      <module name="feichengwurao" target="1.6" />
-      <module name="parent" target="1.6" />
+      <module name="fcwr-part1" target="1.8" />
+      <module name="feichengwurao" target="1.8" />
+      <module name="parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
