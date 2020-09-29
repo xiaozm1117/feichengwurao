@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fcwr-part1/fcwr-part1.iml" filepath="$PROJECT_DIR$/fcwr-part1/fcwr-part1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feichengwurao/feichengwurao.iml" filepath="$PROJECT_DIR$/feichengwurao/feichengwurao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
+    </modules>
+  </component>
+</project>

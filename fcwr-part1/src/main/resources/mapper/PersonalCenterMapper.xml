@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiao.mapper.PersonalCenterMapper">
+
+    <select id="personalData" resultType="com.xiao.pojo.PersonalData">
+        select id,userId,name,sex,birthday,address,interest,purpose,occupation from personalData where userId=#{id}
+    </select>
+
+    <update id="personalDataUpdate">
+        update personalData
+        set
+          name=#{name},
+          sex=#{sex},
+          birthday=#{birthday},
+          address=#{address},
+          interest=#{interest},
+          purpose=#{purpose},
+          occupation=#{occupation}
+        where userId=#{userId}
+    </update>
+</mapper>
